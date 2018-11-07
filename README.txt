@@ -33,36 +33,66 @@ The task includes:
 	6: Code and MAS review.
 
 verilog files reside in : ./async_fifo_task
+MAS FILE is at : ./async_fifo_task
 =============================================================================================================================================
 Excel commit log file:
 =============================================================================================================================================
-
+as Intel doesnt aprove us to share its inner GIT system 
+we will maintain a Excel commit log file with documentation of our commits in Intel inner git system.
 
 
 =============================================================================================================================================
 Reports directory:
 =============================================================================================================================================
+this folder contain all the report's that submitted by us to the course stuff
 
+contain:
+final_reportThirdYear
+Group327_y3_presentation
+midReportThirdYear
+miniReportThirdYear
+progress report 1
+report1semesterA
 
 
 =============================================================================================================================================
 Synthesis logs directory:
 =============================================================================================================================================
+at this folder you can find Address Translation & IRAM Cache Synthesis tools logs.
+the logs contain : information about - size (Flip Flop and Combinatorical cells count ) , timing (timeing of the logic paths of the design).
 
+contain:
+Empty
 
 
 =============================================================================================================================================
-Top level schems directory:
+Schemes directory:
 =============================================================================================================================================
+at this folder you will find the schemes of both Address Translation & IRAM Cache
+the drawings are sited in a Microsoft Viso files: cache.vsdx, at.vsdx.
 
-
+contain:
+Address Translation (at.vsdx) content : 
+ Top Level - p0, Top Level - p1.
+	
+IRAM Cache (cache.vsdx) content:
+Oriantation , Top Level .
 
 =============================================================================================================================================
 MAS directory:
 =============================================================================================================================================
+at this folder you can find Address Translation & IRAM Cache MASs
 
+contain:
+Empty
+WIP - with Intel legal department
 
 
 =============================================================================================================================================
 Testbench directory:
 =============================================================================================================================================
+at this folder one can find : Address Translation & IRAM Cache wave diagrams of the testbenches .
+
+contain:
+Empty
+
