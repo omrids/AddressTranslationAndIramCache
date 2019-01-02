@@ -39,7 +39,7 @@ Excel commit log file:
 =============================================================================================================================================
 as Intel doesnt aprove us to share its inner GIT system 
 we will maintain a Excel commit log file with documentation of our commits in Intel inner git system.
-updated - 23.12.18
+updated - 2.1.19
 
 =============================================================================================================================================
 Reports directory:
@@ -54,7 +54,8 @@ miniReportThirdYear
 progress report 1
 report1semesterA
 progress report 2
-
+progress report 3
+Group327_y4_presentation
 
 =============================================================================================================================================
 Synthesis logs directory:
@@ -77,7 +78,7 @@ Address Translation (at.vsdx) content :
  Top Level - p0, Top Level - p1.
 	
 IRAM Cache (cache.vsdx) content:
-Oriantation , Top Level .
+Oriantation , Top Level , detailed schemes.
 
 =============================================================================================================================================
 MAS directory:
@@ -86,7 +87,7 @@ at this folder you can find Address Translation & IRAM Cache MASs
 
 contain:
 Empty
-WIP - with Intel legal department 23.12.18
+WIP - with Intel legal department 2.1.19
 MAS cache - done 
 MAS Address Translation - done
 note that the finished mas is to the architectial demand we got so far.
