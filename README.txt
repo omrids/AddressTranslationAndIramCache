@@ -39,7 +39,7 @@ Excel commit log file:
 =============================================================================================================================================
 as Intel doesnt aprove us to share its inner GIT system 
 we will maintain a Excel commit log file with documentation of our commits in Intel inner git system.
-updated - 2.1.19
+updated - 13.1.19
 
 =============================================================================================================================================
 Reports directory:
