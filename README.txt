@@ -39,7 +39,7 @@ Excel commit log file:
 =============================================================================================================================================
 as Intel doesnt aprove us to share its inner GIT system 
 we will maintain a Excel commit log file with documentation of our commits in Intel inner git system.
-updated - 13.1.19
+updated - 22.1.19
 
 =============================================================================================================================================
 Reports directory:
@@ -56,6 +56,7 @@ report1semesterA
 progress report 2
 progress report 3
 Group327_y4_presentation
+group327_y4_mid_year_report
 
 =============================================================================================================================================
 Synthesis logs directory:
@@ -99,5 +100,7 @@ Testbench directory:
 at this folder one can find : Address Translation & IRAM Cache wave diagrams of the testbenches .
 
 contain:
-Empty
+at_1 - basic test for mvp AT
+cache_1 - basic test for mvp Cache
+
 
