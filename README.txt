@@ -39,7 +39,7 @@ Excel commit log file:
 =============================================================================================================================================
 as Intel doesnt aprove us to share its inner GIT system 
 we will maintain a Excel commit log file with documentation of our commits in Intel inner git system.
-updated - 22.1.19
+updated - 8.4.19
 
 =============================================================================================================================================
 Reports directory:
@@ -57,6 +57,8 @@ progress report 2
 progress report 3
 Group327_y4_presentation
 group327_y4_mid_year_report
+DemoDayPresentation
+progress report 4
 
 =============================================================================================================================================
 Synthesis logs directory:
@@ -65,8 +67,11 @@ at this folder you can find Address Translation & IRAM Cache Synthesis tools log
 the logs contain : information about - size (Flip Flop and Combinatorical cells count ) , timing (timeing of the logic paths of the design).
 
 contain:
-Empty
+Address Translation :
+area , timing, syntesis gates
 
+Cache :
+area , timing, syntesis gates
 
 =============================================================================================================================================
 Schemes directory:
@@ -76,7 +81,7 @@ the drawings are sited in a Microsoft Viso files: cache.vsdx, at.vsdx.
 
 contain:
 Address Translation (at.vsdx) content : 
- Top Level - p0, Top Level - p1.
+ Top Level - p0, Top Level - p1 , final calculator , final wrapper for AT, AT_high_level.
 	
 IRAM Cache (cache.vsdx) content:
 Oriantation , Top Level , detailed schemes.
