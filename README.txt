@@ -39,7 +39,7 @@ Excel commit log file:
 =============================================================================================================================================
 as Intel doesnt aprove us to share its inner GIT system 
 we will maintain a Excel commit log file with documentation of our commits in Intel inner git system.
-updated - 8.4.19
+updated - 26.5.19
 
 =============================================================================================================================================
 Reports directory:
@@ -59,6 +59,16 @@ Group327_y4_presentation
 group327_y4_mid_year_report
 DemoDayPresentation
 progress report 4
+poster
+transcript
+final presentation
+progres report 5
+project abstract
+last meetup status prestation
+plru_vs_lru
+flop_vs_latch
+table_entry_size
+project book
 
 =============================================================================================================================================
 Synthesis logs directory:
@@ -67,6 +77,8 @@ at this folder you can find Address Translation & IRAM Cache Synthesis tools log
 the logs contain : information about - size (Flip Flop and Combinatorical cells count ) , timing (timeing of the logic paths of the design).
 
 contain:
+full area and timing reports
+
 Address Translation :
 area , timing, syntesis gates
 
@@ -93,7 +105,7 @@ at this folder you can find Address Translation & IRAM Cache MASs
 
 contain:
 Empty
-WIP - with Intel legal department 2.1.19
+NOT APROVED - with Intel legal department
 MAS cache - done 
 MAS Address Translation - done
 note that the finished mas is to the architectial demand we got so far.
