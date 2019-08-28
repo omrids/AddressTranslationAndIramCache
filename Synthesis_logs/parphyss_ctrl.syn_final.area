@@ -1,0 +1,56 @@
+**************************************************
+Report : area -physical
+Design : parphyss_ctrl
+**************************************************
+
+Boundary            : {0.000 0.000} {275.886 0.000} {275.886 276.216} {0.000 276.216} {0.000 0.000} 
+Core Area           : 76204.127376 
+Placement Area      : 0.000 0.000 275.886 276.216
+
+ 
+****************************************
+Report : area
+****************************************
+
+Library(s) Used:
+
+    ec0hs_ln_p1274d3_tttt_v085_t100_max_ccst (File: /p/hdk/cad/stdcells/ec0hs/17ww27.5_ec0hs_g.3.p2.all/lib/ccst/p1274d3/ln/ec0hs_ln_p1274d3_tttt_v085_t100_max_ccst.ldb)
+    ec0_ln_p1274d3_tttt_v085_t100_max_ccst (File: /p/hdk/cad/stdcells/ec0/17ww27.5_ec0_g.3.p2.all/lib/ccst/p1274d3/ln/ec0_ln_p1274d3_tttt_v085_t100_max_ccst.ldb)
+    ec0sdgalpha_ln_p1274d3_tttt_v085_t100_max_ccst (File: /p/hdk/cad/stdcells/ec0sdgalpha/17ww27.5_ec0sdgalpha_g.3.p2.sdg/lib/ccst/p1274d3/ln/ec0sdgalpha_ln_p1274d3_tttt_v085_t100_max_ccst.ldb)
+    ec0cnlalpha_ln_p1274d3_tttt_v065_t100_max_ccst (File: /p/hdk/cad/stdcells/ec0cnlalpha/17ww27.5_ec0cnlalpha_g.3.p2.cnl/lib/ccst/p1274d3/ln/ec0cnlalpha_ln_p1274d3_tttt_v065_t100_max_ccst.ldb)
+    ec0ser_ln_p1274d3_tttt_v065_t100_max_ccst (File: /p/hdk/cad/stdcells/ec0ser/17ww27.5_ec0ser_g.3.p2.all/lib/ccst/p1274d3/ln/ec0ser_ln_p1274d3_tttt_v065_t100_max_ccst.ldb)
+
+
+Combinational area:              21752.281764
+Buf/Inv area:                     4999.281138
+Noncombinational area:           26280.430359
+Macro/Black Box area:              350.441005
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                 48383.153128
+Total area:                 undefined
+
+Core Area:                     76204
+Aspect Ratio:                 1.0012
+Utilization Ratio:            0.6369
+
+
+The above information was reported from the logical library. The following are from the physical library:
+
+  Total moveable cell area: 48383.2
+  Total fixed cell area: 184.0
+  Total physical cell area: 48567.2
+ Core area: 0.000, 0.000, 275.886, 276.216
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area             Local cell area
+                                  -------------------  -------------------------------- 
+Hierarchical cell                 Absolute    Percent  Combi-      Noncombi-   Black-
+                                  Total       Total    national    national    boxes     Design
+--------------------------------  ----------  -------  ----------  ----------  --------  ---------
+parphyss_ctrl                     48383.1531    100.0  21752.2818  26280.4304  350.4410  parphyss_ctrl
+--------------------------------  ----------  -------  ----------  ----------  --------  ---------
+Total                                                  21752.2818  26280.4304  350.4410
+

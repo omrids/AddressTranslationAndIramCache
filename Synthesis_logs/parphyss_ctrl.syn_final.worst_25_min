@@ -1,0 +1,746 @@
+
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -input_pins
+        -nets
+        -max_paths 25
+        -transition_time
+        -sort_by slack
+****************************************
+
+ * Some/all delay information is back-annotated.
+
+ # A fanout number of 10000 was used for high fanout net computations.
+
+Operating Conditions: typical_1.00   Library: ec0_ln_p1274d3_tttt_v065_t100_max_ccst
+Wire Load Model Mode: Inactive.
+
+  Startpoint: physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_per_sync.pflr_clear_regs_pre_reg_2
+              (rising edge-triggered flip-flop clocked by ascan_preclk_mgmt_clk)
+  Endpoint: physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_per_sync.u_sync_pflr_clear_regs.sync_cell.sync_cell_i.ctech_lib_doublesync_rstb_dcszo_2
+            (rising edge-triggered flip-flop clocked by ascan_preclk_mgmt_clk)
+  Path Group: ascan_preclk_mgmt_clk
+  Path Type: min
+
+  Point                                       Fanout     Trans      Incr       Path
+  ------------------------------------------------------------------------------------
+  clock ascan_preclk_mgmt_clk (rise edge)                            0.0        0.0
+  clock network delay (ideal)                                        0.0        0.0
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_per_sync.pflr_clear_regs_pre_reg_2/clk (ec0faw00cal2d03x5)      0.0      0.0 #      0.0 r
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_per_sync.pflr_clear_regs_pre_reg_2/o (ec0faw00cal2d03x5)      6.4     13.9     13.9 r
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_per_sync.pflr_clear_regs_pre_2_0 (net)     1      0.0     13.9 r
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_per_sync.u_sync_pflr_clear_regs.sync_cell.sync_cell_i.ctech_lib_doublesync_rstb_dcszo_2/d (ec0fmw203al1n04x5)      6.4      0.0 *     13.9 r
+  data arrival time                                                            13.9
+
+  clock ascan_preclk_mgmt_clk (rise edge)                            0.0        0.0
+  clock network delay (ideal)                                        0.0        0.0
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_per_sync.u_sync_pflr_clear_regs.sync_cell.sync_cell_i.ctech_lib_doublesync_rstb_dcszo_2/clk (ec0fmw203al1n04x5)      0.0      0.0 r
+  library hold time                                                  9.1        9.1
+  data required time                                                            9.1
+  ------------------------------------------------------------------------------------
+  data required time                                                            9.1
+  data arrival time                                                           -13.9
+  ------------------------------------------------------------------------------------
+  slack (MET)                                                                   4.8
+
+
+  Startpoint: physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_per_sync.pflr_clear_regs_pre_reg_7
+              (rising edge-triggered flip-flop clocked by ascan_preclk_mgmt_clk)
+  Endpoint: physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_per_sync.u_sync_pflr_clear_regs.sync_cell.sync_cell_i.ctech_lib_doublesync_rstb_dcszo_7
+            (rising edge-triggered flip-flop clocked by ascan_preclk_mgmt_clk)
+  Path Group: ascan_preclk_mgmt_clk
+  Path Type: min
+
+  Point                                       Fanout     Trans      Incr       Path
+  ------------------------------------------------------------------------------------
+  clock ascan_preclk_mgmt_clk (rise edge)                            0.0        0.0
+  clock network delay (ideal)                                        0.0        0.0
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_per_sync.pflr_clear_regs_pre_reg_7/clk (ec0faw00cal2d03x5)      0.0      0.0 #      0.0 r
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_per_sync.pflr_clear_regs_pre_reg_7/o (ec0faw00cal2d03x5)      6.4     13.9     13.9 r
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_per_sync.pflr_clear_regs_pre_7_0 (net)     1      0.0     13.9 r
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_per_sync.u_sync_pflr_clear_regs.sync_cell.sync_cell_i.ctech_lib_doublesync_rstb_dcszo_7/d (ec0fmw203al1n04x5)      6.4      0.0 *     13.9 r
+  data arrival time                                                            13.9
+
+  clock ascan_preclk_mgmt_clk (rise edge)                            0.0        0.0
+  clock network delay (ideal)                                        0.0        0.0
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_per_sync.u_sync_pflr_clear_regs.sync_cell.sync_cell_i.ctech_lib_doublesync_rstb_dcszo_7/clk (ec0fmw203al1n04x5)      0.0      0.0 r
+  library hold time                                                  9.1        9.1
+  data required time                                                            9.1
+  ------------------------------------------------------------------------------------
+  data required time                                                            9.1
+  data arrival time                                                           -13.9
+  ------------------------------------------------------------------------------------
+  slack (MET)                                                                   4.8
+
+
+  Startpoint: physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_per_sync.pflr_clear_regs_pre_reg_4
+              (rising edge-triggered flip-flop clocked by ascan_preclk_mgmt_clk)
+  Endpoint: physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_per_sync.u_sync_pflr_clear_regs.sync_cell.sync_cell_i.ctech_lib_doublesync_rstb_dcszo_4
+            (rising edge-triggered flip-flop clocked by ascan_preclk_mgmt_clk)
+  Path Group: ascan_preclk_mgmt_clk
+  Path Type: min
+
+  Point                                       Fanout     Trans      Incr       Path
+  ------------------------------------------------------------------------------------
+  clock ascan_preclk_mgmt_clk (rise edge)                            0.0        0.0
+  clock network delay (ideal)                                        0.0        0.0
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_per_sync.pflr_clear_regs_pre_reg_4/clk (ec0faw00cal2d03x5)      0.0      0.0 #      0.0 r
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_per_sync.pflr_clear_regs_pre_reg_4/o (ec0faw00cal2d03x5)      6.5     14.0     14.0 r
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_per_sync.pflr_clear_regs_pre_4_0 (net)     1      0.0     14.0 r
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_per_sync.u_sync_pflr_clear_regs.sync_cell.sync_cell_i.ctech_lib_doublesync_rstb_dcszo_4/d (ec0fmw203al1n04x5)      6.5      0.0 *     14.0 r
+  data arrival time                                                            14.0
+
+  clock ascan_preclk_mgmt_clk (rise edge)                            0.0        0.0
+  clock network delay (ideal)                                        0.0        0.0
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_per_sync.u_sync_pflr_clear_regs.sync_cell.sync_cell_i.ctech_lib_doublesync_rstb_dcszo_4/clk (ec0fmw203al1n04x5)      0.0      0.0 r
+  library hold time                                                  9.1        9.1
+  data required time                                                            9.1
+  ------------------------------------------------------------------------------------
+  data required time                                                            9.1
+  data arrival time                                                           -14.0
+  ------------------------------------------------------------------------------------
+  slack (MET)                                                                   4.9
+
+
+  Startpoint: physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_imn_glu.req_asynch_fifo.async_fifo_cntrl.rd_wr_sync_gray.gray_sync.src_gray_reg_2
+              (rising edge-triggered flip-flop clocked by ascan_preclk_mgmt_clk)
+  Endpoint: physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_imn_glu.req_asynch_fifo.async_fifo_cntrl.rd_wr_sync_gray.gray_sync.gen_sync_ta2tb.sync_cell.sync_cell_i.ctech_lib_doublesync_rstb_dcszo_2
+            (rising edge-triggered flip-flop clocked by ascan_preclk_mgmt_clk)
+  Path Group: ascan_preclk_mgmt_clk
+  Path Type: min
+
+  Point                                       Fanout     Trans      Incr       Path
+  ------------------------------------------------------------------------------------
+  clock ascan_preclk_mgmt_clk (rise edge)                            0.0        0.0
+  clock network delay (ideal)                                        0.0        0.0
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_imn_glu.req_asynch_fifo.async_fifo_cntrl.rd_wr_sync_gray.gray_sync.src_gray_reg_2/clk (ec0faw003al2n03x5)      0.0      0.0 #      0.0 r
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_imn_glu.req_asynch_fifo.async_fifo_cntrl.rd_wr_sync_gray.gray_sync.src_gray_reg_2/o (ec0faw003al2n03x5)      6.7     14.0     14.0 r
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_imn_glu.req_asynch_fifo.async_fifo_cntrl.rd_wr_sync_gray.gray_sync.src_gray_2_0 (net)     1      0.0     14.0 r
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_imn_glu.req_asynch_fifo.async_fifo_cntrl.rd_wr_sync_gray.gray_sync.gen_sync_ta2tb.sync_cell.sync_cell_i.ctech_lib_doublesync_rstb_dcszo_2/d (ec0fmw203al1n04x5)      6.7      0.0 *     14.1 r
+  data arrival time                                                            14.1
+
+  clock ascan_preclk_mgmt_clk (rise edge)                            0.0        0.0
+  clock network delay (ideal)                                        0.0        0.0
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_imn_glu.req_asynch_fifo.async_fifo_cntrl.rd_wr_sync_gray.gray_sync.gen_sync_ta2tb.sync_cell.sync_cell_i.ctech_lib_doublesync_rstb_dcszo_2/clk (ec0fmw203al1n04x5)      0.0      0.0 r
+  library hold time                                                  9.1        9.1
+  data required time                                                            9.1
+  ------------------------------------------------------------------------------------
+  data required time                                                            9.1
+  data arrival time                                                           -14.1
+  ------------------------------------------------------------------------------------
+  slack (MET)                                                                   5.0
+
+
+  Startpoint: physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_imn_glu.req_asynch_fifo.async_fifo_cntrl.rd_wr_sync_gray.gray_sync.src_gray_reg_1
+              (rising edge-triggered flip-flop clocked by ascan_preclk_mgmt_clk)
+  Endpoint: physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_imn_glu.req_asynch_fifo.async_fifo_cntrl.rd_wr_sync_gray.gray_sync.gen_sync_ta2tb.sync_cell.sync_cell_i.ctech_lib_doublesync_rstb_dcszo_1
+            (rising edge-triggered flip-flop clocked by ascan_preclk_mgmt_clk)
+  Path Group: ascan_preclk_mgmt_clk
+  Path Type: min
+
+  Point                                       Fanout     Trans      Incr       Path
+  ------------------------------------------------------------------------------------
+  clock ascan_preclk_mgmt_clk (rise edge)                            0.0        0.0
+  clock network delay (ideal)                                        0.0        0.0
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_imn_glu.req_asynch_fifo.async_fifo_cntrl.rd_wr_sync_gray.gray_sync.src_gray_reg_1/clk (ec0faw003al2n03x5)      0.0      0.0 #      0.0 r
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_imn_glu.req_asynch_fifo.async_fifo_cntrl.rd_wr_sync_gray.gray_sync.src_gray_reg_1/o (ec0faw003al2n03x5)      6.7     14.1     14.1 r
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_imn_glu.req_asynch_fifo.async_fifo_cntrl.rd_wr_sync_gray.gray_sync.src_gray_1_0 (net)     1      0.0     14.1 r
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_imn_glu.req_asynch_fifo.async_fifo_cntrl.rd_wr_sync_gray.gray_sync.gen_sync_ta2tb.sync_cell.sync_cell_i.ctech_lib_doublesync_rstb_dcszo_1/d (ec0fmw203al1n04x5)      6.7      0.0 *     14.1 r
+  data arrival time                                                            14.1
+
+  clock ascan_preclk_mgmt_clk (rise edge)                            0.0        0.0
+  clock network delay (ideal)                                        0.0        0.0
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_imn_glu.req_asynch_fifo.async_fifo_cntrl.rd_wr_sync_gray.gray_sync.gen_sync_ta2tb.sync_cell.sync_cell_i.ctech_lib_doublesync_rstb_dcszo_1/clk (ec0fmw203al1n04x5)      0.0      0.0 r
+  library hold time                                                  9.1        9.1
+  data required time                                                            9.1
+  ------------------------------------------------------------------------------------
+  data required time                                                            9.1
+  data arrival time                                                           -14.1
+  ------------------------------------------------------------------------------------
+  slack (MET)                                                                   5.0
+
+
+  Startpoint: physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_per_sync.pflr_clear_regs_pre_reg_6
+              (rising edge-triggered flip-flop clocked by ascan_preclk_mgmt_clk)
+  Endpoint: physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_per_sync.u_sync_pflr_clear_regs.sync_cell.sync_cell_i.ctech_lib_doublesync_rstb_dcszo_6
+            (rising edge-triggered flip-flop clocked by ascan_preclk_mgmt_clk)
+  Path Group: ascan_preclk_mgmt_clk
+  Path Type: min
+
+  Point                                       Fanout     Trans      Incr       Path
+  ------------------------------------------------------------------------------------
+  clock ascan_preclk_mgmt_clk (rise edge)                            0.0        0.0
+  clock network delay (ideal)                                        0.0        0.0
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_per_sync.pflr_clear_regs_pre_reg_6/clk (ec0faw00cal2d03x5)      0.0      0.0 #      0.0 r
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_per_sync.pflr_clear_regs_pre_reg_6/o (ec0faw00cal2d03x5)      6.6     14.1     14.1 r
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_per_sync.pflr_clear_regs_pre_6_0 (net)     1      0.0     14.1 r
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_per_sync.u_sync_pflr_clear_regs.sync_cell.sync_cell_i.ctech_lib_doublesync_rstb_dcszo_6/d (ec0fmw203al1n04x5)      6.6      0.0 *     14.1 r
+  data arrival time                                                            14.1
+
+  clock ascan_preclk_mgmt_clk (rise edge)                            0.0        0.0
+  clock network delay (ideal)                                        0.0        0.0
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_per_sync.u_sync_pflr_clear_regs.sync_cell.sync_cell_i.ctech_lib_doublesync_rstb_dcszo_6/clk (ec0fmw203al1n04x5)      0.0      0.0 r
+  library hold time                                                  9.1        9.1
+  data required time                                                            9.1
+  ------------------------------------------------------------------------------------
+  data required time                                                            9.1
+  data arrival time                                                           -14.1
+  ------------------------------------------------------------------------------------
+  slack (MET)                                                                   5.0
+
+
+  Startpoint: physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_imn_glu.comp_asynch_fifo.async_fifo_cntrl.rd_wr_sync_gray.gray_sync.src_gray_reg_0
+              (rising edge-triggered flip-flop clocked by ascan_preclk_mgmt_clk)
+  Endpoint: physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_imn_glu.comp_asynch_fifo.async_fifo_cntrl.rd_wr_sync_gray.gray_sync.gen_sync_ta2tb.sync_cell.sync_cell_i.ctech_lib_doublesync_rstb_dcszo_0
+            (rising edge-triggered flip-flop clocked by ascan_preclk_mgmt_clk)
+  Path Group: ascan_preclk_mgmt_clk
+  Path Type: min
+
+  Point                                       Fanout     Trans      Incr       Path
+  ------------------------------------------------------------------------------------
+  clock ascan_preclk_mgmt_clk (rise edge)                            0.0        0.0
+  clock network delay (ideal)                                        0.0        0.0
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_imn_glu.comp_asynch_fifo.async_fifo_cntrl.rd_wr_sync_gray.gray_sync.src_gray_reg_0/clk (ec0faw003al2n03x5)      0.0      0.0 #      0.0 r
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_imn_glu.comp_asynch_fifo.async_fifo_cntrl.rd_wr_sync_gray.gray_sync.src_gray_reg_0/o (ec0faw003al2n03x5)      6.8     14.1     14.1 r
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_imn_glu.comp_asynch_fifo.async_fifo_cntrl.rd_wr_sync_gray.gray_sync.src_gray_0_0 (net)     1      0.0     14.1 r
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_imn_glu.comp_asynch_fifo.async_fifo_cntrl.rd_wr_sync_gray.gray_sync.gen_sync_ta2tb.sync_cell.sync_cell_i.ctech_lib_doublesync_rstb_dcszo_0/d (ec0fmw203al1n04x5)      6.8      0.0 *     14.2 r
+  data arrival time                                                            14.2
+
+  clock ascan_preclk_mgmt_clk (rise edge)                            0.0        0.0
+  clock network delay (ideal)                                        0.0        0.0
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_imn_glu.comp_asynch_fifo.async_fifo_cntrl.rd_wr_sync_gray.gray_sync.gen_sync_ta2tb.sync_cell.sync_cell_i.ctech_lib_doublesync_rstb_dcszo_0/clk (ec0fmw203al1n04x5)      0.0      0.0 r
+  library hold time                                                  9.1        9.1
+  data required time                                                            9.1
+  ------------------------------------------------------------------------------------
+  data required time                                                            9.1
+  data arrival time                                                           -14.2
+  ------------------------------------------------------------------------------------
+  slack (MET)                                                                   5.1
+
+
+  Startpoint: physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_imn_glu.comp_asynch_fifo.async_fifo_cntrl.rd_wr_sync_gray.gray_sync.src_gray_reg_2
+              (rising edge-triggered flip-flop clocked by ascan_preclk_mgmt_clk)
+  Endpoint: physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_imn_glu.comp_asynch_fifo.async_fifo_cntrl.rd_wr_sync_gray.gray_sync.gen_sync_ta2tb.sync_cell.sync_cell_i.ctech_lib_doublesync_rstb_dcszo_2
+            (rising edge-triggered flip-flop clocked by ascan_preclk_mgmt_clk)
+  Path Group: ascan_preclk_mgmt_clk
+  Path Type: min
+
+  Point                                       Fanout     Trans      Incr       Path
+  ------------------------------------------------------------------------------------
+  clock ascan_preclk_mgmt_clk (rise edge)                            0.0        0.0
+  clock network delay (ideal)                                        0.0        0.0
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_imn_glu.comp_asynch_fifo.async_fifo_cntrl.rd_wr_sync_gray.gray_sync.src_gray_reg_2/clk (ec0faw003al2n03x5)      0.0      0.0 #      0.0 r
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_imn_glu.comp_asynch_fifo.async_fifo_cntrl.rd_wr_sync_gray.gray_sync.src_gray_reg_2/o (ec0faw003al2n03x5)      6.9     14.2     14.2 r
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_imn_glu.comp_asynch_fifo.async_fifo_cntrl.rd_wr_sync_gray.gray_sync.src_gray_2_0 (net)     1      0.0     14.2 r
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_imn_glu.comp_asynch_fifo.async_fifo_cntrl.rd_wr_sync_gray.gray_sync.gen_sync_ta2tb.sync_cell.sync_cell_i.ctech_lib_doublesync_rstb_dcszo_2/d (ec0fmw203al1n04x5)      6.9      0.0 *     14.3 r
+  data arrival time                                                            14.3
+
+  clock ascan_preclk_mgmt_clk (rise edge)                            0.0        0.0
+  clock network delay (ideal)                                        0.0        0.0
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_imn_glu.comp_asynch_fifo.async_fifo_cntrl.rd_wr_sync_gray.gray_sync.gen_sync_ta2tb.sync_cell.sync_cell_i.ctech_lib_doublesync_rstb_dcszo_2/clk (ec0fmw203al1n04x5)      0.0      0.0 r
+  library hold time                                                  9.1        9.1
+  data required time                                                            9.1
+  ------------------------------------------------------------------------------------
+  data required time                                                            9.1
+  data arrival time                                                           -14.3
+  ------------------------------------------------------------------------------------
+  slack (MET)                                                                   5.2
+
+
+  Startpoint: physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_imn_glu.req_asynch_fifo.async_fifo_cntrl.wr_rd_sync_gray.gray_sync.src_gray_reg_2
+              (rising edge-triggered flip-flop clocked by ascan_preclk_mgmt_clk)
+  Endpoint: physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_imn_glu.req_asynch_fifo.async_fifo_cntrl.wr_rd_sync_gray.gray_sync.gen_sync_ta2tb.sync_cell.sync_cell_i.ctech_lib_doublesync_rstb_dcszo_2
+            (rising edge-triggered flip-flop clocked by ascan_preclk_mgmt_clk)
+  Path Group: ascan_preclk_mgmt_clk
+  Path Type: min
+
+  Point                                       Fanout     Trans      Incr       Path
+  ------------------------------------------------------------------------------------
+  clock ascan_preclk_mgmt_clk (rise edge)                            0.0        0.0
+  clock network delay (ideal)                                        0.0        0.0
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_imn_glu.req_asynch_fifo.async_fifo_cntrl.wr_rd_sync_gray.gray_sync.src_gray_reg_2/clk (ec0faw003al2n03x5)      0.0      0.0 #      0.0 r
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_imn_glu.req_asynch_fifo.async_fifo_cntrl.wr_rd_sync_gray.gray_sync.src_gray_reg_2/o (ec0faw003al2n03x5)      6.9     14.3     14.3 r
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_imn_glu.req_asynch_fifo.async_fifo_cntrl.wr_rd_sync_gray.gray_sync.src_gray_2_0 (net)     1      0.0     14.3 r
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_imn_glu.req_asynch_fifo.async_fifo_cntrl.wr_rd_sync_gray.gray_sync.gen_sync_ta2tb.sync_cell.sync_cell_i.ctech_lib_doublesync_rstb_dcszo_2/d (ec0fmw203al1n04x5)      6.9      0.0 *     14.3 r
+  data arrival time                                                            14.3
+
+  clock ascan_preclk_mgmt_clk (rise edge)                            0.0        0.0
+  clock network delay (ideal)                                        0.0        0.0
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_imn_glu.req_asynch_fifo.async_fifo_cntrl.wr_rd_sync_gray.gray_sync.gen_sync_ta2tb.sync_cell.sync_cell_i.ctech_lib_doublesync_rstb_dcszo_2/clk (ec0fmw203al1n04x5)      0.0      0.0 r
+  library hold time                                                  9.1        9.1
+  data required time                                                            9.1
+  ------------------------------------------------------------------------------------
+  data required time                                                            9.1
+  data arrival time                                                           -14.3
+  ------------------------------------------------------------------------------------
+  slack (MET)                                                                   5.2
+
+
+  Startpoint: physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_per_sync.pflr_clear_regs_pre_reg_5
+              (rising edge-triggered flip-flop clocked by ascan_preclk_mgmt_clk)
+  Endpoint: physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_per_sync.u_sync_pflr_clear_regs.sync_cell.sync_cell_i.ctech_lib_doublesync_rstb_dcszo_5
+            (rising edge-triggered flip-flop clocked by ascan_preclk_mgmt_clk)
+  Path Group: ascan_preclk_mgmt_clk
+  Path Type: min
+
+  Point                                       Fanout     Trans      Incr       Path
+  ------------------------------------------------------------------------------------
+  clock ascan_preclk_mgmt_clk (rise edge)                            0.0        0.0
+  clock network delay (ideal)                                        0.0        0.0
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_per_sync.pflr_clear_regs_pre_reg_5/clk (ec0faw00cal2d03x5)      0.0      0.0 #      0.0 r
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_per_sync.pflr_clear_regs_pre_reg_5/o (ec0faw00cal2d03x5)      6.8     14.4     14.4 r
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_per_sync.pflr_clear_regs_pre_5_0 (net)     1      0.0     14.4 r
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_per_sync.u_sync_pflr_clear_regs.sync_cell.sync_cell_i.ctech_lib_doublesync_rstb_dcszo_5/d (ec0fmw203al1n04x5)      6.8      0.0 *     14.4 r
+  data arrival time                                                            14.4
+
+  clock ascan_preclk_mgmt_clk (rise edge)                            0.0        0.0
+  clock network delay (ideal)                                        0.0        0.0
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_per_sync.u_sync_pflr_clear_regs.sync_cell.sync_cell_i.ctech_lib_doublesync_rstb_dcszo_5/clk (ec0fmw203al1n04x5)      0.0      0.0 r
+  library hold time                                                  9.1        9.1
+  data required time                                                            9.1
+  ------------------------------------------------------------------------------------
+  data required time                                                            9.1
+  data arrival time                                                           -14.4
+  ------------------------------------------------------------------------------------
+  slack (MET)                                                                   5.3
+
+
+  Startpoint: physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_imn_glu.req_asynch_fifo.async_fifo_cntrl.rd_wr_sync_gray.gray_sync.src_gray_reg_0
+              (rising edge-triggered flip-flop clocked by ascan_preclk_mgmt_clk)
+  Endpoint: physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_imn_glu.req_asynch_fifo.async_fifo_cntrl.rd_wr_sync_gray.gray_sync.gen_sync_ta2tb.sync_cell.sync_cell_i.ctech_lib_doublesync_rstb_dcszo_0
+            (rising edge-triggered flip-flop clocked by ascan_preclk_mgmt_clk)
+  Path Group: ascan_preclk_mgmt_clk
+  Path Type: min
+
+  Point                                       Fanout     Trans      Incr       Path
+  ------------------------------------------------------------------------------------
+  clock ascan_preclk_mgmt_clk (rise edge)                            0.0        0.0
+  clock network delay (ideal)                                        0.0        0.0
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_imn_glu.req_asynch_fifo.async_fifo_cntrl.rd_wr_sync_gray.gray_sync.src_gray_reg_0/clk (ec0faw003al2n03x5)      0.0      0.0 #      0.0 r
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_imn_glu.req_asynch_fifo.async_fifo_cntrl.rd_wr_sync_gray.gray_sync.src_gray_reg_0/o (ec0faw003al2n03x5)      7.0     14.4     14.4 r
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_imn_glu.req_asynch_fifo.async_fifo_cntrl.rd_wr_sync_gray.gray_sync.src_gray_0_0 (net)     1      0.0     14.4 r
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_imn_glu.req_asynch_fifo.async_fifo_cntrl.rd_wr_sync_gray.gray_sync.gen_sync_ta2tb.sync_cell.sync_cell_i.ctech_lib_doublesync_rstb_dcszo_0/d (ec0fmw203al1n04x5)      7.0      0.0 *     14.4 r
+  data arrival time                                                            14.4
+
+  clock ascan_preclk_mgmt_clk (rise edge)                            0.0        0.0
+  clock network delay (ideal)                                        0.0        0.0
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_imn_glu.req_asynch_fifo.async_fifo_cntrl.rd_wr_sync_gray.gray_sync.gen_sync_ta2tb.sync_cell.sync_cell_i.ctech_lib_doublesync_rstb_dcszo_0/clk (ec0fmw203al1n04x5)      0.0      0.0 r
+  library hold time                                                  9.1        9.1
+  data required time                                                            9.1
+  ------------------------------------------------------------------------------------
+  data required time                                                            9.1
+  data arrival time                                                           -14.4
+  ------------------------------------------------------------------------------------
+  slack (MET)                                                                   5.4
+
+
+  Startpoint: physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_per_sync.pflr_clear_regs_pre_reg_3
+              (rising edge-triggered flip-flop clocked by ascan_preclk_mgmt_clk)
+  Endpoint: physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_per_sync.u_sync_pflr_clear_regs.sync_cell.sync_cell_i.ctech_lib_doublesync_rstb_dcszo_3
+            (rising edge-triggered flip-flop clocked by ascan_preclk_mgmt_clk)
+  Path Group: ascan_preclk_mgmt_clk
+  Path Type: min
+
+  Point                                       Fanout     Trans      Incr       Path
+  ------------------------------------------------------------------------------------
+  clock ascan_preclk_mgmt_clk (rise edge)                            0.0        0.0
+  clock network delay (ideal)                                        0.0        0.0
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_per_sync.pflr_clear_regs_pre_reg_3/clk (ec0faw00cal2d03x5)      0.0      0.0 #      0.0 r
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_per_sync.pflr_clear_regs_pre_reg_3/o (ec0faw00cal2d03x5)      6.9     14.5     14.5 r
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_per_sync.pflr_clear_regs_pre_3_0 (net)     1      0.0     14.5 r
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_per_sync.u_sync_pflr_clear_regs.sync_cell.sync_cell_i.ctech_lib_doublesync_rstb_dcszo_3/d (ec0fmw203al1n04x5)      6.9      0.0 *     14.5 r
+  data arrival time                                                            14.5
+
+  clock ascan_preclk_mgmt_clk (rise edge)                            0.0        0.0
+  clock network delay (ideal)                                        0.0        0.0
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_per_sync.u_sync_pflr_clear_regs.sync_cell.sync_cell_i.ctech_lib_doublesync_rstb_dcszo_3/clk (ec0fmw203al1n04x5)      0.0      0.0 r
+  library hold time                                                  9.1        9.1
+  data required time                                                            9.1
+  ------------------------------------------------------------------------------------
+  data required time                                                            9.1
+  data arrival time                                                           -14.5
+  ------------------------------------------------------------------------------------
+  slack (MET)                                                                   5.4
+
+
+  Startpoint: physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_imn_glu.req_asynch_fifo.async_fifo_cntrl.wr_rd_sync_gray.gray_sync.src_gray_reg_1
+              (rising edge-triggered flip-flop clocked by ascan_preclk_mgmt_clk)
+  Endpoint: physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_imn_glu.req_asynch_fifo.async_fifo_cntrl.wr_rd_sync_gray.gray_sync.gen_sync_ta2tb.sync_cell.sync_cell_i.ctech_lib_doublesync_rstb_dcszo_1
+            (rising edge-triggered flip-flop clocked by ascan_preclk_mgmt_clk)
+  Path Group: ascan_preclk_mgmt_clk
+  Path Type: min
+
+  Point                                       Fanout     Trans      Incr       Path
+  ------------------------------------------------------------------------------------
+  clock ascan_preclk_mgmt_clk (rise edge)                            0.0        0.0
+  clock network delay (ideal)                                        0.0        0.0
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_imn_glu.req_asynch_fifo.async_fifo_cntrl.wr_rd_sync_gray.gray_sync.src_gray_reg_1/clk (ec0faw003al2n03x5)      0.0      0.0 #      0.0 r
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_imn_glu.req_asynch_fifo.async_fifo_cntrl.wr_rd_sync_gray.gray_sync.src_gray_reg_1/o (ec0faw003al2n03x5)      7.1     14.4     14.4 r
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_imn_glu.req_asynch_fifo.async_fifo_cntrl.wr_rd_sync_gray.gray_sync.src_gray_1_0 (net)     1      0.0     14.4 r
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_imn_glu.req_asynch_fifo.async_fifo_cntrl.wr_rd_sync_gray.gray_sync.gen_sync_ta2tb.sync_cell.sync_cell_i.ctech_lib_doublesync_rstb_dcszo_1/d (ec0fmw203al1n04x5)      7.1      0.0 *     14.5 r
+  data arrival time                                                            14.5
+
+  clock ascan_preclk_mgmt_clk (rise edge)                            0.0        0.0
+  clock network delay (ideal)                                        0.0        0.0
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_imn_glu.req_asynch_fifo.async_fifo_cntrl.wr_rd_sync_gray.gray_sync.gen_sync_ta2tb.sync_cell.sync_cell_i.ctech_lib_doublesync_rstb_dcszo_1/clk (ec0fmw203al1n04x5)      0.0      0.0 r
+  library hold time                                                  9.1        9.1
+  data required time                                                            9.1
+  ------------------------------------------------------------------------------------
+  data required time                                                            9.1
+  data arrival time                                                           -14.5
+  ------------------------------------------------------------------------------------
+  slack (MET)                                                                   5.4
+
+
+  Startpoint: physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_per_sync.pflr_clear_regs_pre_reg_1
+              (rising edge-triggered flip-flop clocked by ascan_preclk_mgmt_clk)
+  Endpoint: physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_per_sync.u_sync_pflr_clear_regs.sync_cell.sync_cell_i.ctech_lib_doublesync_rstb_dcszo_1
+            (rising edge-triggered flip-flop clocked by ascan_preclk_mgmt_clk)
+  Path Group: ascan_preclk_mgmt_clk
+  Path Type: min
+
+  Point                                       Fanout     Trans      Incr       Path
+  ------------------------------------------------------------------------------------
+  clock ascan_preclk_mgmt_clk (rise edge)                            0.0        0.0
+  clock network delay (ideal)                                        0.0        0.0
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_per_sync.pflr_clear_regs_pre_reg_1/clk (ec0faw00cal2d03x5)      0.0      0.0 #      0.0 r
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_per_sync.pflr_clear_regs_pre_reg_1/o (ec0faw00cal2d03x5)      7.0     14.5     14.5 r
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_per_sync.pflr_clear_regs_pre_1_0 (net)     1      0.0     14.5 r
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_per_sync.u_sync_pflr_clear_regs.sync_cell.sync_cell_i.ctech_lib_doublesync_rstb_dcszo_1/d (ec0fmw203al1n04x5)      7.0      0.0 *     14.5 r
+  data arrival time                                                            14.5
+
+  clock ascan_preclk_mgmt_clk (rise edge)                            0.0        0.0
+  clock network delay (ideal)                                        0.0        0.0
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_per_sync.u_sync_pflr_clear_regs.sync_cell.sync_cell_i.ctech_lib_doublesync_rstb_dcszo_1/clk (ec0fmw203al1n04x5)      0.0      0.0 r
+  library hold time                                                  9.1        9.1
+  data required time                                                            9.1
+  ------------------------------------------------------------------------------------
+  data required time                                                            9.1
+  data arrival time                                                           -14.5
+  ------------------------------------------------------------------------------------
+  slack (MET)                                                                   5.5
+
+
+  Startpoint: physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_imn_glu.comp_asynch_fifo.async_fifo_cntrl.rd_wr_sync_gray.gray_sync.src_gray_reg_1
+              (rising edge-triggered flip-flop clocked by ascan_preclk_mgmt_clk)
+  Endpoint: physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_imn_glu.comp_asynch_fifo.async_fifo_cntrl.rd_wr_sync_gray.gray_sync.gen_sync_ta2tb.sync_cell.sync_cell_i.ctech_lib_doublesync_rstb_dcszo_1
+            (rising edge-triggered flip-flop clocked by ascan_preclk_mgmt_clk)
+  Path Group: ascan_preclk_mgmt_clk
+  Path Type: min
+
+  Point                                       Fanout     Trans      Incr       Path
+  ------------------------------------------------------------------------------------
+  clock ascan_preclk_mgmt_clk (rise edge)                            0.0        0.0
+  clock network delay (ideal)                                        0.0        0.0
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_imn_glu.comp_asynch_fifo.async_fifo_cntrl.rd_wr_sync_gray.gray_sync.src_gray_reg_1/clk (ec0faw003al2n03x5)      0.0      0.0 #      0.0 r
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_imn_glu.comp_asynch_fifo.async_fifo_cntrl.rd_wr_sync_gray.gray_sync.src_gray_reg_1/o (ec0faw003al2n03x5)      7.3     14.7     14.7 r
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_imn_glu.comp_asynch_fifo.async_fifo_cntrl.rd_wr_sync_gray.gray_sync.src_gray_1_0 (net)     1      0.0     14.7 r
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_imn_glu.comp_asynch_fifo.async_fifo_cntrl.rd_wr_sync_gray.gray_sync.gen_sync_ta2tb.sync_cell.sync_cell_i.ctech_lib_doublesync_rstb_dcszo_1/d (ec0fmw203al1n04x5)      7.3      0.1 *     14.8 r
+  data arrival time                                                            14.8
+
+  clock ascan_preclk_mgmt_clk (rise edge)                            0.0        0.0
+  clock network delay (ideal)                                        0.0        0.0
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_imn_glu.comp_asynch_fifo.async_fifo_cntrl.rd_wr_sync_gray.gray_sync.gen_sync_ta2tb.sync_cell.sync_cell_i.ctech_lib_doublesync_rstb_dcszo_1/clk (ec0fmw203al1n04x5)      0.0      0.0 r
+  library hold time                                                  9.0        9.0
+  data required time                                                            9.0
+  ------------------------------------------------------------------------------------
+  data required time                                                            9.0
+  data arrival time                                                           -14.8
+  ------------------------------------------------------------------------------------
+  slack (MET)                                                                   5.7
+
+
+  Startpoint: physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_imn_glu.req_asynch_fifo.async_fifo_cntrl.wr_rd_sync_gray.gray_sync.src_gray_reg_0
+              (rising edge-triggered flip-flop clocked by ascan_preclk_mgmt_clk)
+  Endpoint: physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_imn_glu.req_asynch_fifo.async_fifo_cntrl.wr_rd_sync_gray.gray_sync.gen_sync_ta2tb.sync_cell.sync_cell_i.ctech_lib_doublesync_rstb_dcszo_0
+            (rising edge-triggered flip-flop clocked by ascan_preclk_mgmt_clk)
+  Path Group: ascan_preclk_mgmt_clk
+  Path Type: min
+
+  Point                                       Fanout     Trans      Incr       Path
+  ------------------------------------------------------------------------------------
+  clock ascan_preclk_mgmt_clk (rise edge)                            0.0        0.0
+  clock network delay (ideal)                                        0.0        0.0
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_imn_glu.req_asynch_fifo.async_fifo_cntrl.wr_rd_sync_gray.gray_sync.src_gray_reg_0/clk (ec0faw003al2n03x5)      0.0      0.0 #      0.0 r
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_imn_glu.req_asynch_fifo.async_fifo_cntrl.wr_rd_sync_gray.gray_sync.src_gray_reg_0/o (ec0faw003al2n03x5)      7.3     14.7     14.7 r
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_imn_glu.req_asynch_fifo.async_fifo_cntrl.wr_rd_sync_gray.gray_sync.src_gray_0_0 (net)     1      0.0     14.7 r
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_imn_glu.req_asynch_fifo.async_fifo_cntrl.wr_rd_sync_gray.gray_sync.gen_sync_ta2tb.sync_cell.sync_cell_i.ctech_lib_doublesync_rstb_dcszo_0/d (ec0fmw203al1n04x5)      7.3      0.1 *     14.8 r
+  data arrival time                                                            14.8
+
+  clock ascan_preclk_mgmt_clk (rise edge)                            0.0        0.0
+  clock network delay (ideal)                                        0.0        0.0
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_imn_glu.req_asynch_fifo.async_fifo_cntrl.wr_rd_sync_gray.gray_sync.gen_sync_ta2tb.sync_cell.sync_cell_i.ctech_lib_doublesync_rstb_dcszo_0/clk (ec0fmw203al1n04x5)      0.0      0.0 r
+  library hold time                                                  9.0        9.0
+  data required time                                                            9.0
+  ------------------------------------------------------------------------------------
+  data required time                                                            9.0
+  data arrival time                                                           -14.8
+  ------------------------------------------------------------------------------------
+  slack (MET)                                                                   5.7
+
+
+  Startpoint: physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_imn_glu.comp_asynch_fifo.async_fifo_cntrl.wr_rd_sync_gray.gray_sync.src_gray_reg_2
+              (rising edge-triggered flip-flop clocked by ascan_preclk_mgmt_clk)
+  Endpoint: physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_imn_glu.comp_asynch_fifo.async_fifo_cntrl.wr_rd_sync_gray.gray_sync.gen_sync_ta2tb.sync_cell.sync_cell_i.ctech_lib_doublesync_rstb_dcszo_2
+            (rising edge-triggered flip-flop clocked by ascan_preclk_mgmt_clk)
+  Path Group: ascan_preclk_mgmt_clk
+  Path Type: min
+
+  Point                                       Fanout     Trans      Incr       Path
+  ------------------------------------------------------------------------------------
+  clock ascan_preclk_mgmt_clk (rise edge)                            0.0        0.0
+  clock network delay (ideal)                                        0.0        0.0
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_imn_glu.comp_asynch_fifo.async_fifo_cntrl.wr_rd_sync_gray.gray_sync.src_gray_reg_2/clk (ec0faw003al2n03x5)      0.0      0.0 #      0.0 r
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_imn_glu.comp_asynch_fifo.async_fifo_cntrl.wr_rd_sync_gray.gray_sync.src_gray_reg_2/o (ec0faw003al2n03x5)      7.6     15.0     15.0 r
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_imn_glu.comp_asynch_fifo.async_fifo_cntrl.wr_rd_sync_gray.gray_sync.src_gray_2_0 (net)     1      0.0     15.0 r
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_imn_glu.comp_asynch_fifo.async_fifo_cntrl.wr_rd_sync_gray.gray_sync.gen_sync_ta2tb.sync_cell.sync_cell_i.ctech_lib_doublesync_rstb_dcszo_2/d (ec0fmw203al1n04x5)      7.6      0.1 *     15.0 r
+  data arrival time                                                            15.0
+
+  clock ascan_preclk_mgmt_clk (rise edge)                            0.0        0.0
+  clock network delay (ideal)                                        0.0        0.0
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_imn_glu.comp_asynch_fifo.async_fifo_cntrl.wr_rd_sync_gray.gray_sync.gen_sync_ta2tb.sync_cell.sync_cell_i.ctech_lib_doublesync_rstb_dcszo_2/clk (ec0fmw203al1n04x5)      0.0      0.0 r
+  library hold time                                                  9.0        9.0
+  data required time                                                            9.0
+  ------------------------------------------------------------------------------------
+  data required time                                                            9.0
+  data arrival time                                                           -15.0
+  ------------------------------------------------------------------------------------
+  slack (MET)                                                                   6.0
+
+
+  Startpoint: physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_imn_glu.comp_asynch_fifo.async_fifo_cntrl.wr_rd_sync_gray.gray_sync.src_gray_reg_1
+              (rising edge-triggered flip-flop clocked by ascan_preclk_mgmt_clk)
+  Endpoint: physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_imn_glu.comp_asynch_fifo.async_fifo_cntrl.wr_rd_sync_gray.gray_sync.gen_sync_ta2tb.sync_cell.sync_cell_i.ctech_lib_doublesync_rstb_dcszo_1
+            (rising edge-triggered flip-flop clocked by ascan_preclk_mgmt_clk)
+  Path Group: ascan_preclk_mgmt_clk
+  Path Type: min
+
+  Point                                       Fanout     Trans      Incr       Path
+  ------------------------------------------------------------------------------------
+  clock ascan_preclk_mgmt_clk (rise edge)                            0.0        0.0
+  clock network delay (ideal)                                        0.0        0.0
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_imn_glu.comp_asynch_fifo.async_fifo_cntrl.wr_rd_sync_gray.gray_sync.src_gray_reg_1/clk (ec0faw003al2n03x5)      0.0      0.0 #      0.0 r
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_imn_glu.comp_asynch_fifo.async_fifo_cntrl.wr_rd_sync_gray.gray_sync.src_gray_reg_1/o (ec0faw003al2n03x5)      7.8     15.2     15.2 r
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_imn_glu.comp_asynch_fifo.async_fifo_cntrl.wr_rd_sync_gray.gray_sync.src_gray_1_0 (net)     1      0.0     15.2 r
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_imn_glu.comp_asynch_fifo.async_fifo_cntrl.wr_rd_sync_gray.gray_sync.gen_sync_ta2tb.sync_cell.sync_cell_i.ctech_lib_doublesync_rstb_dcszo_1/d (ec0fmw203al1n04x5)      7.8      0.1 *     15.3 r
+  data arrival time                                                            15.3
+
+  clock ascan_preclk_mgmt_clk (rise edge)                            0.0        0.0
+  clock network delay (ideal)                                        0.0        0.0
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_imn_glu.comp_asynch_fifo.async_fifo_cntrl.wr_rd_sync_gray.gray_sync.gen_sync_ta2tb.sync_cell.sync_cell_i.ctech_lib_doublesync_rstb_dcszo_1/clk (ec0fmw203al1n04x5)      0.0      0.0 r
+  library hold time                                                  9.0        9.0
+  data required time                                                            9.0
+  ------------------------------------------------------------------------------------
+  data required time                                                            9.0
+  data arrival time                                                           -15.3
+  ------------------------------------------------------------------------------------
+  slack (MET)                                                                   6.3
+
+
+  Startpoint: physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_per_sync.pflr_clear_regs_pre_reg_0
+              (rising edge-triggered flip-flop clocked by ascan_preclk_mgmt_clk)
+  Endpoint: physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_per_sync.u_sync_pflr_clear_regs.sync_cell.sync_cell_i.ctech_lib_doublesync_rstb_dcszo_0
+            (rising edge-triggered flip-flop clocked by ascan_preclk_mgmt_clk)
+  Path Group: ascan_preclk_mgmt_clk
+  Path Type: min
+
+  Point                                       Fanout     Trans      Incr       Path
+  ------------------------------------------------------------------------------------
+  clock ascan_preclk_mgmt_clk (rise edge)                            0.0        0.0
+  clock network delay (ideal)                                        0.0        0.0
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_per_sync.pflr_clear_regs_pre_reg_0/clk (ec0faw00cal2d03x5)      0.0      0.0 #      0.0 r
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_per_sync.pflr_clear_regs_pre_reg_0/o (ec0faw00cal2d03x5)      7.9     15.4     15.4 r
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_per_sync.pflr_clear_regs_pre_0_0 (net)     1      0.0     15.4 r
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_per_sync.u_sync_pflr_clear_regs.sync_cell.sync_cell_i.ctech_lib_doublesync_rstb_dcszo_0/d (ec0fmw203al1n04x5)      7.9      0.1 *     15.5 r
+  data arrival time                                                            15.5
+
+  clock ascan_preclk_mgmt_clk (rise edge)                            0.0        0.0
+  clock network delay (ideal)                                        0.0        0.0
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_per_sync.u_sync_pflr_clear_regs.sync_cell.sync_cell_i.ctech_lib_doublesync_rstb_dcszo_0/clk (ec0fmw203al1n04x5)      0.0      0.0 r
+  library hold time                                                  9.0        9.0
+  data required time                                                            9.0
+  ------------------------------------------------------------------------------------
+  data required time                                                            9.0
+  data arrival time                                                           -15.5
+  ------------------------------------------------------------------------------------
+  slack (MET)                                                                   6.6
+
+
+  Startpoint: physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_imn_glu.comp_asynch_fifo.async_fifo_cntrl.wr_rd_sync_gray.gray_sync.src_gray_reg_0
+              (rising edge-triggered flip-flop clocked by ascan_preclk_mgmt_clk)
+  Endpoint: physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_imn_glu.comp_asynch_fifo.async_fifo_cntrl.wr_rd_sync_gray.gray_sync.gen_sync_ta2tb.sync_cell.sync_cell_i.ctech_lib_doublesync_rstb_dcszo_0
+            (rising edge-triggered flip-flop clocked by ascan_preclk_mgmt_clk)
+  Path Group: ascan_preclk_mgmt_clk
+  Path Type: min
+
+  Point                                       Fanout     Trans      Incr       Path
+  ------------------------------------------------------------------------------------
+  clock ascan_preclk_mgmt_clk (rise edge)                            0.0        0.0
+  clock network delay (ideal)                                        0.0        0.0
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_imn_glu.comp_asynch_fifo.async_fifo_cntrl.wr_rd_sync_gray.gray_sync.src_gray_reg_0/clk (ec0faw003al2n03x5)      0.0      0.0 #      0.0 r
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_imn_glu.comp_asynch_fifo.async_fifo_cntrl.wr_rd_sync_gray.gray_sync.src_gray_reg_0/o (ec0faw003al2n03x5)      8.0     15.4     15.4 r
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_imn_glu.comp_asynch_fifo.async_fifo_cntrl.wr_rd_sync_gray.gray_sync.src_gray_0_0 (net)     1      0.0     15.4 r
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_imn_glu.comp_asynch_fifo.async_fifo_cntrl.wr_rd_sync_gray.gray_sync.gen_sync_ta2tb.sync_cell.sync_cell_i.ctech_lib_doublesync_rstb_dcszo_0/d (ec0fmw203al1n04x5)      8.0      0.1 *     15.5 r
+  data arrival time                                                            15.5
+
+  clock ascan_preclk_mgmt_clk (rise edge)                            0.0        0.0
+  clock network delay (ideal)                                        0.0        0.0
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.u_emp_imn_glu.comp_asynch_fifo.async_fifo_cntrl.wr_rd_sync_gray.gray_sync.gen_sync_ta2tb.sync_cell.sync_cell_i.ctech_lib_doublesync_rstb_dcszo_0/clk (ec0fmw203al1n04x5)      0.0      0.0 r
+  library hold time                                                  8.9        8.9
+  data required time                                                            8.9
+  ------------------------------------------------------------------------------------
+  data required time                                                            8.9
+  data arrival time                                                           -15.5
+  ------------------------------------------------------------------------------------
+  slack (MET)                                                                   6.6
+
+
+  Startpoint: physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.Xttop.Xtensa.LoadStore.iStall_M_reg.tmp_reg_0
+              (rising edge-triggered flip-flop clocked by ascan_preclk_mgmt_clk)
+  Endpoint: physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.Xttop.Xtensa.LoadStore.iStall_W_reg.tmp_reg_0
+            (rising edge-triggered flip-flop clocked by ascan_preclk_mgmt_clk)
+  Path Group: ascan_preclk_mgmt_clk
+  Path Type: min
+
+  Point                                       Fanout     Trans      Incr       Path
+  ------------------------------------------------------------------------------------
+  clock ascan_preclk_mgmt_clk (rise edge)                            0.0        0.0
+  clock network delay (ideal)                                        0.0        0.0
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.Xttop.Xtensa.LoadStore.iStall_M_reg.tmp_reg_0/clk (ec0faw003al2n03x5)      0.0      0.0      0.0 r
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.Xttop.Xtensa.LoadStore.iStall_M_reg.tmp_reg_0/o (ec0faw003al2n03x5)      4.6     11.9     11.9 r
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.Xttop.Xtensa.LoadStore.iStall_M (net)     1      0.0     11.9 r
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.Xttop.Xtensa.LoadStore.iStall_W_reg.tmp_reg_0/d (ec0faw003al2n03x5)      4.6      0.0 *     11.9 r
+  data arrival time                                                            11.9
+
+  clock ascan_preclk_mgmt_clk (rise edge)                            0.0        0.0
+  clock network delay (ideal)                                        0.0        0.0
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.Xttop.Xtensa.LoadStore.iStall_W_reg.tmp_reg_0/clk (ec0faw003al2n03x5)      0.0      0.0 r
+  library hold time                                                 -7.1       -7.1
+  data required time                                                           -7.1
+  ------------------------------------------------------------------------------------
+  data required time                                                           -7.1
+  data arrival time                                                           -11.9
+  ------------------------------------------------------------------------------------
+  slack (MET)                                                                  19.0
+
+
+  Startpoint: physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.Xttop.Xtensa.TIE.TIE_semantic_slot0_loadi64.TIE_xtdelay_TIE_tmp0_C2.i0.tmp_reg_31
+              (rising edge-triggered flip-flop clocked by ascan_preclk_mgmt_clk)
+  Endpoint: physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.Xttop.Xtensa.TIE.TIE_semantic_slot0_loadi64.TIE_xtdelay_TIE_tmp0_C3.i0.tmp_reg_31
+            (rising edge-triggered flip-flop clocked by ascan_preclk_mgmt_clk)
+  Path Group: ascan_preclk_mgmt_clk
+  Path Type: min
+
+  Point                                       Fanout     Trans      Incr       Path
+  ------------------------------------------------------------------------------------
+  clock ascan_preclk_mgmt_clk (rise edge)                            0.0        0.0
+  clock network delay (ideal)                                        0.0        0.0
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.Xttop.Xtensa.TIE.TIE_semantic_slot0_loadi64.TIE_xtdelay_TIE_tmp0_C2.i0.tmp_reg_31/clk (ec0faw003al2n03x5)      0.0      0.0      0.0 r
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.Xttop.Xtensa.TIE.TIE_semantic_slot0_loadi64.TIE_xtdelay_TIE_tmp0_C2.i0.tmp_reg_31/o (ec0faw003al2n03x5)      4.6     11.9     11.9 r
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.Xttop.Xtensa.TIE.TIE_semantic_slot0_loadi64.TIE_tmp0_C2_31_0 (net)     1      0.0     11.9 r
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.Xttop.Xtensa.TIE.TIE_semantic_slot0_loadi64.TIE_xtdelay_TIE_tmp0_C3.i0.tmp_reg_31/d (ec0faw003al2n03x5)      4.6      0.0 *     11.9 r
+  data arrival time                                                            11.9
+
+  clock ascan_preclk_mgmt_clk (rise edge)                            0.0        0.0
+  clock network delay (ideal)                                        0.0        0.0
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.Xttop.Xtensa.TIE.TIE_semantic_slot0_loadi64.TIE_xtdelay_TIE_tmp0_C3.i0.tmp_reg_31/clk (ec0faw003al2n03x5)      0.0      0.0 r
+  library hold time                                                 -7.1       -7.1
+  data required time                                                           -7.1
+  ------------------------------------------------------------------------------------
+  data required time                                                           -7.1
+  data arrival time                                                           -11.9
+  ------------------------------------------------------------------------------------
+  slack (MET)                                                                  19.0
+
+
+  Startpoint: physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.Xttop.Xtensa.TIE.TIE_semantic_slot0_loadi64.TIE_xtdelay_TIE_tmp0_C2.i0.tmp_reg_32
+              (rising edge-triggered flip-flop clocked by ascan_preclk_mgmt_clk)
+  Endpoint: physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.Xttop.Xtensa.TIE.TIE_semantic_slot0_loadi64.TIE_xtdelay_TIE_tmp0_C3.i0.tmp_reg_32
+            (rising edge-triggered flip-flop clocked by ascan_preclk_mgmt_clk)
+  Path Group: ascan_preclk_mgmt_clk
+  Path Type: min
+
+  Point                                       Fanout     Trans      Incr       Path
+  ------------------------------------------------------------------------------------
+  clock ascan_preclk_mgmt_clk (rise edge)                            0.0        0.0
+  clock network delay (ideal)                                        0.0        0.0
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.Xttop.Xtensa.TIE.TIE_semantic_slot0_loadi64.TIE_xtdelay_TIE_tmp0_C2.i0.tmp_reg_32/clk (ec0faw003al2n03x5)      0.0      0.0      0.0 r
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.Xttop.Xtensa.TIE.TIE_semantic_slot0_loadi64.TIE_xtdelay_TIE_tmp0_C2.i0.tmp_reg_32/o (ec0faw003al2n03x5)      4.6     11.9     11.9 r
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.Xttop.Xtensa.TIE.TIE_semantic_slot0_loadi64.TIE_tmp0_C2_32_0 (net)     1      0.0     11.9 r
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.Xttop.Xtensa.TIE.TIE_semantic_slot0_loadi64.TIE_xtdelay_TIE_tmp0_C3.i0.tmp_reg_32/d (ec0faw003al2n03x5)      4.6      0.0 *     11.9 r
+  data arrival time                                                            11.9
+
+  clock ascan_preclk_mgmt_clk (rise edge)                            0.0        0.0
+  clock network delay (ideal)                                        0.0        0.0
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.Xttop.Xtensa.TIE.TIE_semantic_slot0_loadi64.TIE_xtdelay_TIE_tmp0_C3.i0.tmp_reg_32/clk (ec0faw003al2n03x5)      0.0      0.0 r
+  library hold time                                                 -7.1       -7.1
+  data required time                                                           -7.1
+  ------------------------------------------------------------------------------------
+  data required time                                                           -7.1
+  data arrival time                                                           -11.9
+  ------------------------------------------------------------------------------------
+  slack (MET)                                                                  19.1
+
+
+  Startpoint: physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.Xttop.Xtensa.TIE.TIE_semantic_slot0_storex64.TIE_xtdelay_TIE_tmp2_C2.i0.tmp_reg_31
+              (rising edge-triggered flip-flop clocked by ascan_preclk_mgmt_clk)
+  Endpoint: physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.Xttop.Xtensa.TIE.TIE_semantic_slot0_storex64.TIE_xtdelay_TIE_tmp2_C3.i0.tmp_reg_31
+            (rising edge-triggered flip-flop clocked by ascan_preclk_mgmt_clk)
+  Path Group: ascan_preclk_mgmt_clk
+  Path Type: min
+
+  Point                                       Fanout     Trans      Incr       Path
+  ------------------------------------------------------------------------------------
+  clock ascan_preclk_mgmt_clk (rise edge)                            0.0        0.0
+  clock network delay (ideal)                                        0.0        0.0
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.Xttop.Xtensa.TIE.TIE_semantic_slot0_storex64.TIE_xtdelay_TIE_tmp2_C2.i0.tmp_reg_31/clk (ec0faw003al2n03x5)      0.0      0.0      0.0 r
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.Xttop.Xtensa.TIE.TIE_semantic_slot0_storex64.TIE_xtdelay_TIE_tmp2_C2.i0.tmp_reg_31/o (ec0faw003al2n03x5)      4.6     11.9     11.9 r
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.Xttop.Xtensa.TIE.TIE_semantic_slot0_storex64.TIE_tmp2_C2_31_0 (net)     1      0.0     11.9 r
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.Xttop.Xtensa.TIE.TIE_semantic_slot0_storex64.TIE_xtdelay_TIE_tmp2_C3.i0.tmp_reg_31/d (ec0faw003al2n03x5)      4.6      0.0 *     11.9 r
+  data arrival time                                                            11.9
+
+  clock ascan_preclk_mgmt_clk (rise edge)                            0.0        0.0
+  clock network delay (ideal)                                        0.0        0.0
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.Xttop.Xtensa.TIE.TIE_semantic_slot0_storex64.TIE_xtdelay_TIE_tmp2_C3.i0.tmp_reg_31/clk (ec0faw003al2n03x5)      0.0      0.0 r
+  library hold time                                                 -7.1       -7.1
+  data required time                                                           -7.1
+  ------------------------------------------------------------------------------------
+  data required time                                                           -7.1
+  data arrival time                                                           -11.9
+  ------------------------------------------------------------------------------------
+  slack (MET)                                                                  19.1
+
+
+  Startpoint: physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.Xttop.Xtensa.TIE.TIE_semantic_slot0_loadx64.TIE_xtdelay_TIE_tmp1_C2.i0.tmp_reg_31
+              (rising edge-triggered flip-flop clocked by ascan_preclk_mgmt_clk)
+  Endpoint: physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.Xttop.Xtensa.TIE.TIE_semantic_slot0_loadx64.TIE_xtdelay_TIE_tmp1_C3.i0.tmp_reg_31
+            (rising edge-triggered flip-flop clocked by ascan_preclk_mgmt_clk)
+  Path Group: ascan_preclk_mgmt_clk
+  Path Type: min
+
+  Point                                       Fanout     Trans      Incr       Path
+  ------------------------------------------------------------------------------------
+  clock ascan_preclk_mgmt_clk (rise edge)                            0.0        0.0
+  clock network delay (ideal)                                        0.0        0.0
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.Xttop.Xtensa.TIE.TIE_semantic_slot0_loadx64.TIE_xtdelay_TIE_tmp1_C2.i0.tmp_reg_31/clk (ec0faw003al2n03x5)      0.0      0.0      0.0 r
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.Xttop.Xtensa.TIE.TIE_semantic_slot0_loadx64.TIE_xtdelay_TIE_tmp1_C2.i0.tmp_reg_31/o (ec0faw003al2n03x5)      4.6     11.9     11.9 r
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.Xttop.Xtensa.TIE.TIE_semantic_slot0_loadx64.TIE_tmp1_C2_31_0 (net)     1      0.0     11.9 r
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.Xttop.Xtensa.TIE.TIE_semantic_slot0_loadx64.TIE_xtdelay_TIE_tmp1_C3.i0.tmp_reg_31/d (ec0faw003al2n03x5)      4.6      0.0 *     12.0 r
+  data arrival time                                                            12.0
+
+  clock ascan_preclk_mgmt_clk (rise edge)                            0.0        0.0
+  clock network delay (ideal)                                        0.0        0.0
+  physs_ctrl_apr.physs_ctrl_apr_func_logic.u_emp_core.Xttop.Xtensa.TIE.TIE_semantic_slot0_loadx64.TIE_xtdelay_TIE_tmp1_C3.i0.tmp_reg_31/clk (ec0faw003al2n03x5)      0.0      0.0 r
+  library hold time                                                 -7.1       -7.1
+  data required time                                                           -7.1
+  ------------------------------------------------------------------------------------
+  data required time                                                           -7.1
+  data arrival time                                                           -12.0
+  ------------------------------------------------------------------------------------
+  slack (MET)                                                                  19.1
+
+
+1
